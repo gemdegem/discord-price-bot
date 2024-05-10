@@ -19,8 +19,9 @@ async function updateChannelInfo(client) {
     const arrow = changePercent.startsWith("-") ? "↓" : "↑";
 
 
-    const regexPattern = /^symbol:.*/; //add symbol here to match the channel name
-
+    const regexPattern = /^symbol:.*/; //add symbol here to match the channel name. 
+// Example /^BTC:.*/ will match the channel "BTC: $60,000 ↓ -2.52%"
+    
   
     const allowedServers = ["test1", "test2"]; // add server names here
 
