@@ -9,7 +9,7 @@ const client = new Client({
 
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
-  setInterval(() => updateChannelInfo(client), 20000);
+  setInterval(() => updateChannelInfo(client), 60000);
 });
 async function updateChannelInfo(client) {
   try {
